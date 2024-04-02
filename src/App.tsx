@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import DesignImage from './logo.svg'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [file, setFile] = useState<string | null>(null);
+
+    const handleFile = (event: React.MouseEvent<HTMLLabelElement, MouseEvent>) => {
+        const selectedFile = (event.target as HTMLInputElement).files?.[0] || null;
+        if (selectedFile) {
+            const fileUrl = URL.createObjectURL(selectedFile);
+            setFile(fileUrl)
+        }
+    };
+
+    const HandleDelete = () => {
+        setFile(null)
+    }
+
+    let imgSrc = file === null ? DesignImage : file;
+    let btnName = file === null ? 'Добавить' : 'Изменить'
+    return (
+        <div className='App'>
+            <div className='imgWrap'>
+                <img src={imgSrc} alt='img'/>
+            </div>
+            <div className='btnWrap'>
+                <label htmlFor="file-upload" className='labelBtn' onClick={handleFile}>
+                    <input type="file" id="file-upload"/>
+                    {btnName}
+                </label>
+                {btnName === 'Изменить' && (
+                    <div className='Btn' onClick={HandleDelete}>Удалить</div>
+                )}
+            </div>
+
+        </div>
+    );
 }
 
 export default App;
