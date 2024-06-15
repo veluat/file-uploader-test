@@ -7,6 +7,7 @@
 * typescript
 * gh-pages
 * css
+<div align="center">
 
 ![img](src/assets/test-default.png)
 <br/>
@@ -14,3 +15,5 @@ ___
 <br/>
 
 ![img](src/assets/test-upload.png)
+
+</div>
