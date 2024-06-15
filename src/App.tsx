@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import DesignImage from './assets/logo.svg'
+import DesignImage from './assets/test-default.png'
 
 function App() {
   const [file, setFile] = useState<File | null>(null);
