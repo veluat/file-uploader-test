@@ -1,6 +1,6 @@
 # Testing file uploader
 
-## You can test it in the [DEMO](https://veluat.github.io/TEST_S_1/)
+## You can test it in the [DEMO](https://veluat.github.io/test-file-uploader/))
 
 ### The following libraries are included in the project
 * react
