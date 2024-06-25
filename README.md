@@ -1,6 +1,7 @@
-# Testing file uploader
+# :arrow_down: File Uploader Test
+## This is a simple demo application focused on testing the functionality of a file uploader component. The goal is to create a minimal user interface that allows users to select and upload files, while ensuring the underlying file uploading logic works as expected.
 
-## You can test it in the [DEMO](https://veluat.github.io/test-file-uploader/)
+## :link: You can try it [here](https://veluat.github.io/file-uploader-test)
 
 ### The following libraries are included in the project
 * react
