@@ -1,7 +1,7 @@
 # :arrow_down: File Uploader Test
 ## This is a simple demo application focused on testing the functionality of a file uploader component. The goal is to create a minimal user interface that allows users to select and upload files, while ensuring the underlying file uploading logic works as expected.
 
-## :link: You can try it [here](https://veluat.github.io/file-uploader-test)
+## :link: You can try it [here](https://test-file-uploader.netlify.app)
 
 ### The following libraries are included in the project
 * react
