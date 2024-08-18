@@ -3,10 +3,9 @@
 
 ## :link: You can try it [here](https://test-file-uploader.netlify.app)
 
-### The following libraries are included in the project
+### Libraries and packages:
 * react
 * typescript
-* gh-pages
 * css
 <div align="center">
 
